@@ -52,12 +52,12 @@ $PageOptions['UserPage']['ShowFilter']               = true;								// Show Filt
 $PageOptions['Traffic']['Show']                      = false;								// Enable vnstat traffic statistics
 $PageOptions['IRCDDB']['Show']                       = true;        // Show liveircddb, set it to false if you are running your db in https 
 
-$PageOptions['CustomTXT']                            = '';					// custom text in your header   
+$PageOptions['CustomTXT']                            = 'custom_header';					// custom text in your header   
 
 $Service['PIDFile']                                  = '/var/log/xlxd.pid';
 $Service['XMLFile']                                  = '/var/log/xlxd.xml';
 
-$CallingHome['Active']                               = false;					// xlx phone home, true or false
+$CallingHome['Active']                               = true;					// xlx phone home, true or false
 $CallingHome['MyDashBoardURL']                       = 'http://your_dashboard';			// dashboard url
 $CallingHome['ServerURL']                            = 'http://xlxapi.rlx.lu/api.php';		// database server, do not change !!!!
 $CallingHome['PushDelay']                            = 600;					// push delay in seconds
