@@ -973,8 +973,8 @@ bool CYsfProtocol::EncodeServerStatusPacket(CBuffer *Buffer) const
     // tag
     Buffer->Set(tag, sizeof(tag));
     // hash
-    ::memset(callsign, ' ', sizeof(callsign));
-    g_Reflector.GetCallsign().GetCallsign(callsign);
+//    ::memset(callsign, ' ', sizeof(callsign));
+//    g_Reflector.GetCallsign().GetCallsign(callsign);
     char sz[16];
     ::sprintf(sz, "%05u", CalcHash(callsign, 16) % 100000U);
     Buffer->Append((uint8 *)sz, 5);
