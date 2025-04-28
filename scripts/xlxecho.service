@@ -1,5 +1,5 @@
 [Unit]
-Description=XLX Echo test service
+Description=XLXEcho Service
 After=xlxd.service
 Requires=xlxd.service
 
