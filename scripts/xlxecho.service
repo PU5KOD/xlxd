@@ -1,0 +1,15 @@
+[Unit]
+Description=XLX Echo test service
+After=xlxd.service
+Requires=xlxd.service
+
+[Service]
+ExecStart=/xlxd/xlxecho ECHO 127.0.0.1
+Restart=always
+User=root
+WorkingDirectory=/xlxd
+StandardOutput=append:/xlxd/xlxecho.log
+StandardError=append:/xlxd/xlxecho.log
+
+[Install]
+WantedBy=multi-user.target
