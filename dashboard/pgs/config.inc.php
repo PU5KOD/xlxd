@@ -37,10 +37,11 @@ $PageOptions['PeerPage']['MasqueradeCharacter']      = '###';		// Character used
 $PageOptions['LastHeardPage']['LimitTo']             = 39;		// Number of stations to show
 
 $PageOptions['ModuleNames'] = array();					// Module nomination
-$PageOptions['ModuleNames']['A']                     = 'International';
+$PageOptions['ModuleNames']['A']                     = 'Links';
 $PageOptions['ModuleNames']['B']                     = 'Beacons';
-$PageOptions['ModuleNames']['C']                     = 'Alternative';
-$PageOptions['ModuleNames']['D']                     = 'Maain';
+$PageOptions['ModuleNames']['C']                     = 'Secondary';
+$PageOptions['ModuleNames']['D']                     = 'Main';
+$PageOptions['ModuleNames']['E']                     = 'Echo';
 
 $PageOptions['MetaDescription']                      = 'XLX is a D-Star Reflector System for Ham Radio Operators.';	// Meta Tag Values, usefull for Search Engine
 $PageOptions['MetaKeywords']                         = 'Ham Radio, D-Star, XReflector, XLX, XRF, DCS, REF, ';		// Meta Tag Values, usefull forSearch Engine
