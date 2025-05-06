@@ -13,5 +13,5 @@
 #                      Default value is "*", meaning accept all
 #
 #########################################################################################
-#address 193.1.2.3
-#modules BCD
+#address
+#modules
