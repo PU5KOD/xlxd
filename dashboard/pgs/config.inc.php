@@ -70,8 +70,8 @@ $CallingHome['OverrideIPAddress']                    = "";					// Insert your IP
 $CallingHome['InterlinkFile']                        = "/xlxd/xlxd.interlink";			// Path to interlink file
 
 $VNStat['Interfaces']                                = array();
-$VNStat['Interfaces'][0]['Name']                     = 'eth0';
-$VNStat['Interfaces'][0]['Address']                  = 'eth0';
+$VNStat['Interfaces'][0]['Name']                     = 'netact';
+$VNStat['Interfaces'][0]['Address']                  = 'netact';
 $VNStat['Binary']                                    = '/usr/bin/vnstat';
 
 /*   
