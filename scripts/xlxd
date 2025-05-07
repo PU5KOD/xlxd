@@ -26,8 +26,8 @@ GROUP=root
 
 start () {
     # Adding delay before starting the daemon
-    echo "Delaying startup by 30 seconds..."
-    sleep 30
+    echo "Delaying startup by 15 seconds..."
+    sleep 15
 
     # start daemon
     echo -n "Starting $NAME: "
