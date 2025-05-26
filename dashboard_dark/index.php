@@ -1,23 +1,4 @@
 <?php
-//session_start();
-//$usuarios_pendentes = "/var/www/restricted/pendentes.txt";
-
-// Checks if the server passed the authentication variable
-//if (!isset($_SERVER['PHP_AUTH_USER'])) {
-//    header('WWW-Authenticate: Basic realm="Restricted"');
-//    header('HTTP/1.0 401 Unauthorized');
-//    echo "Acesso negado!";
-//    exit;
-//}
-//$usuario = $_SERVER['PHP_AUTH_USER'];
-
-// Checks if the user is on the password change list
-//$usuarios_pendentes_lista = file($usuarios_pendentes, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-//if (in_array($usuario, $usuarios_pendentes_lista)) {
-//    header("Location: /trocar_senha.php");
-//    exit;
-//}
-
 if (file_exists("./pgs/functions.php")) {
     require_once("./pgs/functions.php");
 } else {
