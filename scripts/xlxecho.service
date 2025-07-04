@@ -8,8 +8,8 @@ ExecStart=/xlxd/xlxecho ECHO 127.0.0.1
 Restart=always
 User=root
 WorkingDirectory=/xlxd
-StandardOutput=append:/xlxd/xlxecho.log
-StandardError=append:/xlxd/xlxecho.log
+StandardOutput=append:/var/log/xlxecho.log
+StandardError=append:/var/log/xlxecho.log
 
 [Install]
 WantedBy=multi-user.target
