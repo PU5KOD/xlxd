@@ -1,0 +1,22 @@
+[Unit]
+Description=XLXD DStar Reflector Service
+After=network-online.target
+Wants=xlx_log.service xlxecho.service
+Requires=network-online.target
+
+[Service]
+Type=forking
+ExecStart=/xlxd/xlxd XLXXXX 172.23.127.100 127.0.0.1
+ExecStartPost=/bin/sh -c 'pidof xlxd > /var/log/xlxd.pid'
+User=root
+Group=root
+Restart=always
+RestartSec=5
+PIDFile=/var/log/xlxd.pid
+ExecStartPre=/bin/sleep 10
+TimeoutStartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
